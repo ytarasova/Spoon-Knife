@@ -1,0 +1,14 @@
+{
+  "name": "spoon-knife",
+  "version": "1.0.0",
+  "description": "Spoon-Knife with auto gate e2e tests",
+  "main": "src/autoGate.js",
+  "scripts": {
+    "test": "node --test tests/",
+    "test:e2e": "node --test tests/e2e/"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
