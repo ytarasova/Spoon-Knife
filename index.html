@@ -16,5 +16,17 @@
   Fork me? Fork you, @octocat!
 </p>
 
+<div id="fork-counter">
+  <button id="fork-btn" onclick="incrementForks()">Fork this repo!</button>
+  <p id="fork-count">Forks: <span id="count">0</span></p>
+</div>
+
+<script>
+  function incrementForks() {
+    var countEl = document.getElementById('count');
+    countEl.textContent = parseInt(countEl.textContent) + 1;
+  }
+</script>
+
 </body>
 </html>
