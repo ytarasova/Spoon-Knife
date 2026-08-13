@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Spoon-Knife</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<img src="forkit.gif" id="octocat" alt="" />
+<img src="forkit.gif" id="octocat" alt="Octocat mascot"/>
 
 <!-- Feel free to change this text here -->
 <p>
   Fork me? Fork you, @octocat!
 </p>
+
+<div class="success-banner" id="successBanner" hidden>
+  <span class="success-icon">✓</span>
+  <span class="success-text">You successfully forked this repo!</span>
+</div>
+
+<div class="steps">
+  <h2>Next steps after forking:</h2>
+  <ol>
+    <li class="step" data-step="1">Fork this repository</li>
+    <li class="step" data-step="2">Clone your fork locally</li>
+    <li class="step" data-step="3">Make your changes</li>
+    <li class="step" data-step="4">Push and open a Pull Request</li>
+  </ol>
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('forked') === 'true') {
+    document.getElementById('successBanner').removeAttribute('hidden');
+  }
+</script>
 
 </body>
 </html>

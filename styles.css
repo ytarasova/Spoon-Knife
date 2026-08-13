@@ -1,11 +1,18 @@
 * {
-  margin:0px;
-  padding:0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+  background: #f6f8fa;
+  color: #24292e;
 }
 
 #octocat {
   display: block;
-  width:384px;
+  width: 384px;
   margin: 50px auto;
 }
 
@@ -13,5 +20,50 @@ p {
   display: block;
   width: 400px;
   margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font-size: 30px;
+}
+
+.success-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 16px 24px;
+  background: #d4edda;
+  border: 1px solid #28a745;
+  border-radius: 6px;
+  color: #155724;
+  font-size: 18px;
+}
+
+.success-icon {
+  font-size: 22px;
+  color: #28a745;
+}
+
+.steps {
+  width: 440px;
+  margin: 30px auto 50px;
+}
+
+.steps h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #586069;
+}
+
+.steps ol {
+  padding-left: 24px;
+}
+
+.step {
+  font-size: 15px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e1e4e8;
+  color: #24292e;
+}
+
+.step:last-child {
+  border-bottom: none;
 }
