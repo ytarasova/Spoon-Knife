@@ -1,0 +1,9 @@
+{
+  "name": "spoon-knife",
+  "version": "1.0.0",
+  "description": "A simple example repository for forking on GitHub",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/e2e.test.js"
+  }
+}
