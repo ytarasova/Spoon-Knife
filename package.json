@@ -1,0 +1,12 @@
+{
+  "name": "spoon-knife-resilience",
+  "version": "1.0.0",
+  "description": "3-replica resilience dispatcher",
+  "type": "module",
+  "scripts": {
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
