@@ -1,0 +1,13 @@
+{
+  "name": "resilience-replica-dispatch",
+  "version": "1.0.0",
+  "description": "Resilient 3-replica dispatcher with circuit breaker and hedged requests",
+  "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "build": "bun build src/index.ts --outdir dist --target node"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}
