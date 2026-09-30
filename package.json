@@ -1,0 +1,9 @@
+{
+  "name": "spoon-knife",
+  "version": "1.0.0",
+  "description": "This repo is for demonstration purposes only.",
+  "scripts": {
+    "test": "node --test test/crash.test.js"
+  },
+  "license": "MIT"
+}
