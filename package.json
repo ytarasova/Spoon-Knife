@@ -1,0 +1,10 @@
+{
+  "name": "spoon-knife",
+  "version": "1.0.0",
+  "description": "Post-fault dispatch probe",
+  "main": "dispatch.js",
+  "scripts": {
+    "test": "node --test test/dispatch.test.js test/probe.test.js"
+  },
+  "license": "MIT"
+}
